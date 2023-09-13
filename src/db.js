@@ -12,7 +12,7 @@ const sequelize = DB_DEPLOY
     })
   : new Sequelize(
       // `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/TheGamingFarm`,
-      `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${BDD}`,
+      `postgresql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${BDD}`,
       {
         dialectOptions : {
           ssl: {
